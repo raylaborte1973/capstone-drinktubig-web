@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>DrinkTubig: Mobile Based Water Refilling Stations Ordering and Delivery System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="assets/images/icon/favicon/favicon.ico">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/metisMenu.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/slicknav.min.css">
+    <!-- others css -->
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/default-css.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- modernizr css -->
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+  
+    <!-- page container area start -->
+    <div class="page-container">
+        <!-- sidebar menu area start -->
+        <div class="sidebar-menu">
+            <div class="sidebar-header ">
+                
+                    <a href="dashboard.html"><!-- <img src="assets/images/icon/logo.png" alt="logo"> --><h2 style="color:white;text-align:center">DrinkTubig</h2></a>
+            </div>
+            <div class="main-menu">
+                <div class="menu-inner">
+                    <nav>
+                        <ul class="metismenu" id="menu">
+                             <li class="active"><a href="dashboard.html"><i class="fa fa-tachometer"></i> <span>Dashboard</span></a></li>
+                             <li><a href="view-stores.html"><i class="fa fa-building"></i> <span>Stores</span></a></li>
+                             <li><a href="view_products.html"><i class="fa fa-product-hunt"></i> <span>Products</span></a></li> 
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- sidebar menu area end -->
+        <!-- main content area start -->
+        <div class="main-content">
+            <!-- header area start -->
+            <div class="header-area">
+                <div class="row align-items-center">
+                    <!-- nav and search button -->
+                    <div class="col-md-3 col-sm-8 clearfix">
+                        <div class="nav-btn pull-left" style="background:none">
+                            <span style="background-color:#b3aaaa"></span>
+                            <span style="background-color:#b3aaaa"></span>
+                            <span style="background-color:#b3aaaa"></span>
+                        </div>
+                    </div>
+                     <div class="col-md-9 col-sm-6 clearfix text-right">
+                        <div class="d-md-inline-block d-block mr-md-4">
+                             <!-- Hide Notification First -->
+                            <ul class="notification-area" hidden>
+                                <li class="dropdown">
+                                    <i class="ti-bell dropdown-toggle" data-toggle="dropdown">
+                                        <span></span>
+                                    </i>
+                                    <div class="dropdown-menu bell-notify-box notify-box">
+                                        <span class="notify-title">Notifications <a href="#">view all</a></span>
+                                        <div class="nofity-list">
+                                            <a href="#" class="notify-item">
+                                                
+                                                <div class="notify-text">
+                                                    <p>You have Changed Your Password</p>
+                                                    <span>8/03/2021</span>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="notify-item">
+                                                
+                                                <div class="notify-text">
+                                                    <p>New Commetns On Post</p>
+                                                    <span>7/29/2021</span>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="notify-item">
+                                                
+                                                <div class="notify-text">
+                                                    <p>Some special like you</p>
+                                                    <span>7/25/2021</span>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="notify-item">
+                                                
+                                                <div class="notify-text">
+                                                    <p>New Commetns On Post</p>
+                                                    <span>7/24/2021</span>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="notify-item">
+                                                
+                                                <div class="notify-text">
+                                                    <p>Some special like you</p>
+                                                    <span>7/20/2021</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                          <!-- Hide Notification -->
+                        </div>
+                        <div class="clearfix d-md-inline-block d-block">
+                            <div class="user-profile m-0 p-2" style="background:none;">
+                                <img class="avatar user-thumb" src="assets/images/author/avatar.png" alt="avatar" style="border:1px solid black;padding:3px">
+                                <h4 class="user-name dropdown-toggle" data-toggle="dropdown" style="color:black"> <span id="display-name"></span> <i class="fa fa-angle-down"></i></h4>
+                                <div class="dropdown-menu">
+
+                                <a class="dropdown-item pt-2" href="profile-settings.html" style="font-size:16px;">Profile Settings</a>
+                                
+                                <hr>
+                               <button class="dropdown-item" style="font-size:16px;" onClick="signOut()">Log Out</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <!-- header area end -->
+            
+            <!-- page title area start -->
+            <div class="page-title-area">
+                <div class="row align-items-center">
+                    <div class="col-sm-6">
+                        <div class="breadcrumbs-area clearfix">
+                            <h4 class="page-title pull-left">Dashboard</h4>
+                            <ul class="breadcrumbs pull-left">
+                                <li><a href="dashboard.html">Home</a></li>
+                                <li><span>Dashboard</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 clearfix" style="height:60px;">
+                       
+                    </div>
+                </div>
+            </div>
+           
+             <!-- page title area end -->
+            <div class="main-content-inner">
+                <!-- sales report area start -->
+                <div class="sales-report-area mt-5 mb-5">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="single-report mb-xs-30">
+                                <div class="s-report-inner pr--20 pt--30 mb-3">
+                                    <div class="icon"><i class="fa fa-list-alt"></i></div>
+                                    <div class="s-report-title d-flex justify-content-between">
+                                        <h4 class="header-title mb-0">Products</h4>
+                                    </div>
+                                    <div class="d-flex justify-content-between pb-2">
+                                       <h2 style="font-size:32px;" id="product-count"></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="single-report mb-xs-30">
+                                <div class="s-report-inner pr--20 pt--30 mb-3">
+                                    <div class="icon"><i class="fa fa-check-square-o"></i></div>
+                                    <div class="s-report-title d-flex justify-content-between">
+                                        <h4 class="header-title mb-0">Total Transaction Made</h4>
+                                      </div>
+                                    <div class="d-flex justify-content-between pb-2">
+                                        <h2 style="font-size:32px;" id="order-count"></span></h2>
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- market value area end -->
+                <!-- row area start -->
+                <div class="row">
+                    <!-- Table Area Here -->
+                    <div class="col-lg-12 mt-sm-30 mt-xs-30">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-sm-flex justify-content-between align-items-center">
+                                    <h4 class="header-title">Transaction History</h4>
+                                  <!--   <select class="custome-select border-0 pr-3">
+                                        <option selected>Last 24 Hours</option>
+                                        <option value="0">01 July 2018</option>
+                                    </select> -->
+                                </div>
+                                    <div class="trad-history mt-4">
+                                              <div class="table-responsive">
+                                                <table class="dbkit-table" id="orders-table">
+                                                  <thead>
+                                                    <tr class="heading-td">
+                                                        <td>Customer Name</td>
+                                                        <td>Transaction Date</td>
+                                                        <td>Transaction Status</td>
+                                                     </tr>
+                                                    </thead>
+
+                                                    <tbody>
+                                                        
+                                                    </tbody>
+
+                                                   
+                                                     
+                                                
+                                                   
+                                                
+                                                
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    <!-- table here area end -->
+                        </div>
+                    </div>
+      
+        <!-- main content area end -->
+
+
+    </div>
+    <!-- page container area end -->
+    
+    <!-- jquery latest version -->
+    <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+    <!-- bootstrap 4 js -->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/metisMenu.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.min.js"></script>
+    <script src="assets/js/jquery.slicknav.min.js"></script>
+
+    <!-- all line chart activation -->
+    <script src="assets/js/line-chart.js"></script>
+    <!-- all pie chart -->
+    <script src="assets/js/pie-chart.js"></script>
+    <!-- others plugins -->
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+     <script>
+        var firebaseConfig = {
+          apiKey: "AIzaSyCoOjba1Ej7CJzg_sNXdfMUhQwqbV5Cruo",
+          authDomain: "drinktubig-bcaf5.firebaseapp.com",
+          projectId: "drinktubig-bcaf5",
+          storageBucket: "drinktubig-bcaf5.appspot.com",
+          messagingSenderId: "865738659083",
+          appId: "1:865738659083:web:60d90ffd1add62930a3e0e",
+          measurementId: "G-8ETGGW6B5L"
+        };
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
+
+     <script src="assets/firebase-js/dashboard-script.js"></script>
+
+    <script>
+        function accessDenied() {
+            location.href = "access-denied.html";
+        }
+    </script>
+
+     <script>
+     $( document ).ready(function() {
+         firebase.auth().onAuthStateChanged((user) => {
+              if (user) {
+                // User is signed in, see docs for a list of available properties
+                // https://firebase.google.com/docs/reference/js/firebase.User
+                var uid = user.uid;
+
+                console.log(uid);
+
+         // code for dashboard
+                       var orderQuery = db.collection("OrderList");
+         // use this query for get Customer and Businessowner & all verified
+         var finalQuery = orderQuery.where("StoreOwner_ID", "==" ,uid);
+
+         finalQuery.get().then(function(orderSize) {      
+            var order_size = orderSize.size;
+
+            console.log(order_size);
+
+
+             $('#order-count').html(order_size); 
+         });
+
+        var productQuery = db.collection("ProductList");
+         // use this query for get Customer and Businessowner & all verified
+         var finalQuery2 = productQuery.where("Store_Owner_ID", "==" ,uid);
+
+         finalQuery2.get().then(function(productSize) {      
+            var product_size = productSize.size;
+
+            console.log(product_size);
+
+             $('#product-count').html(product_size); 
+         });
+
+
+                var user = user;
+           
+                $('#display-name').html(user.displayName);
+                  
+                 } else {
+                    //accessDenied();
+                 }
+               });
+             });
+     </script>
+
+    <script>
+        function signOut() {
+          //var user = firebase.auth().currentUser;
+          firebase.auth().signOut().then(function() {
+            console.log('Signed Out');
+            location.href = "../../login.html";
+          }, function(error) {
+            console.error('Sign Out Error', error);
+          });
+        }
+    </script>
+
+
+</body>
+
+</html>

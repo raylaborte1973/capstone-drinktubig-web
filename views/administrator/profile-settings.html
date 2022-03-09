@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>DrinkTubig: Mobile Based Water Refilling Stations Ordering and Delivery System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="assets/images/icon/favicon/favicon.ico">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/metisMenu.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/slicknav.min.css">
+    <!-- others css -->
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/default-css.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- modernizr css -->
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<style>
+    .dropdown-item.active:hover {
+        background-color:none;
+        color: #2942fa !important;
+    }
+
+    .dropdown-item.active {
+        color:white !important;
+    }
+</style>
+
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+  
+    <!-- page container area start -->
+    <div class="page-container">
+        <!-- sidebar menu area start -->
+        <div class="sidebar-menu">
+            <div class="sidebar-header ">
+                
+                    <a href="dashboard.html"><!-- <img src="assets/images/icon/logo.png" alt="logo"> --><h2 style="color:white;text-align:center">DrinkTubig</h2></a>
+            </div>
+            <div class="main-menu">
+                <div class="menu-inner">
+                     <nav>
+                        <ul class="metismenu" id="menu">
+                             <li><a href="dashboard.html"><i class="fa fa-tachometer"></i> <span>Dashboard</span></a></li>
+                             <li><a href="view_accounts.html"><i class="fa fa-users"></i> <span>Account</span></a></li>
+                             <li><a href="view_stores.html"><i class="fa fa-building"></i> <span>Stores</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- sidebar menu area end -->
+        <!-- main content area start -->
+        <div class="main-content">
+            <!-- header area start -->
+            <div class="header-area">
+                <div class="row align-items-center">
+                    <!-- nav and search button -->
+                    <div class="col-md-3 col-sm-8 clearfix">
+                        <div class="nav-btn pull-left" style="background:none">
+                            <span style="background-color:#b3aaaa"></span>
+                            <span style="background-color:#b3aaaa"></span>
+                            <span style="background-color:#b3aaaa"></span>
+                        </div>
+                    </div>
+                     <div class="col-md-9 col-sm-6 clearfix text-right">
+                        <div class="d-md-inline-block d-block mr-md-4">
+                          <!-- Hide Notification First -->
+                            <ul class="notification-area" hidden>
+                                <li class="dropdown">
+                                    <i class="ti-bell dropdown-toggle" data-toggle="dropdown">
+                                        <span></span>
+                                    </i>
+                                    <div class="dropdown-menu bell-notify-box notify-box">
+                                        <span class="notify-title">Notifications <a href="#">view all</a></span>
+                                        <div class="nofity-list">
+                                            <a href="#" class="notify-item">
+                                                
+                                                <div class="notify-text">
+                                                    <p>You have Changed Your Password</p>
+                                                    <span>8/03/2021</span>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="notify-item">
+                                                
+                                                <div class="notify-text">
+                                                    <p>New Commetns On Post</p>
+                                                    <span>7/29/2021</span>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="notify-item">
+                                                
+                                                <div class="notify-text">
+                                                    <p>Some special like you</p>
+                                                    <span>7/25/2021</span>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="notify-item">
+                                                
+                                                <div class="notify-text">
+                                                    <p>New Commetns On Post</p>
+                                                    <span>7/24/2021</span>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="notify-item">
+                                                
+                                                <div class="notify-text">
+                                                    <p>Some special like you</p>
+                                                    <span>7/20/2021</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                          <!-- Hide Notification -->
+                        </div>
+                        <div class="clearfix d-md-inline-block d-block">
+                            <div class="user-profile m-0 p-2" style="background:none;">
+                                <img class="avatar user-thumb" src="assets/images/author/avatar.png" alt="avatar" style="border:1px solid black;padding:3px">
+                                <h4 class="user-name dropdown-toggle" data-toggle="dropdown" style="color:black"> <span id="display-name"></span> <i class="fa fa-angle-down"></i></h4>
+                                <div class="dropdown-menu">
+
+                                <a class="active dropdown-item pt-2" href="profile-settings.html" style="font-size:16px;">Profile Settings</a>
+                                <hr>
+                                <a class="dropdown-item" href="../../login.html" style="font-size:16px;">Log Out</a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                   
+                </div>
+            </div>
+            <!-- header area end -->
+            <!-- page title area start -->
+            <div class="page-title-area">
+                <div class="row align-items-center">
+                    <div class="col-sm-6">
+                        <div class="breadcrumbs-area clearfix">
+                            <h4 class="page-title pull-left">Profile</h4>
+                            <ul class="breadcrumbs pull-left">
+                                <li><a href="dashboard.html">Home</a></li>
+                                <li><span>Profile Settings</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 clearfix" style="height:60px;">
+                       
+                    </div>
+                </div>
+            </div>
+            <!-- page title area end -->
+                      <div class="main-content-inner">
+            <!-- Progress Table start -->
+                    <div class="col-12 mt-5">
+                        <div class="card">
+                           <div class="card-body">
+                             <div class="col-md-9">
+                        <div class="container content clear-fix">
+                        <h2 class="mt-5 mb-5">Profile Settings</h2>
+                        <div class="row" style="height:100%">
+                            <div class="col-md-9">
+                                <div class="container">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for=fullName>Full Name</label>
+                                            <input type="text" class="form-control" id="fullName">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for=email>Email</label>
+                                            <input type="email" class="form-control" id="email">
+                                        </div>
+                                        <!-- <div class="form-group">
+                                            <label for=pass>Password</label>
+                                            <input type="password" class="form-control" id="pass">
+                                        </div> -->
+                                     <!--    <div class="form-group ">
+                                            <label for=birthday>Birthday</label>
+                                            <input type="date" class="form-control" id="birthday">
+                                        </div> -->
+                                        <div class="row mt-5">
+                                            <div class="col">
+                                            <button type="button" class="btn btn-primary btn-block">Save Changes</button>
+                                        </div>
+                                            <div class="col">
+                                                <a href="dashboard.html" class="btn btn-default btn-block text-dark">Cancel</a>                                           
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                 </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+         </div>  
+            <!--profile settings area end-->
+            <div class="main-content-inner">
+    <!-- jquery latest version -->
+    <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+    <!-- bootstrap 4 js -->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/metisMenu.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.min.js"></script>
+    <script src="assets/js/jquery.slicknav.min.js"></script>
+
+    <!-- all line chart activation -->
+    <script src="assets/js/line-chart.js"></script>
+    <!-- all pie chart -->
+    <script src="assets/js/pie-chart.js"></script>
+    <!-- others plugins -->
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+     <script>
+        var firebaseConfig = {
+          apiKey: "AIzaSyCoOjba1Ej7CJzg_sNXdfMUhQwqbV5Cruo",
+          authDomain: "drinktubig-bcaf5.firebaseapp.com",
+          projectId: "drinktubig-bcaf5",
+          storageBucket: "drinktubig-bcaf5.appspot.com",
+          messagingSenderId: "865738659083",
+          appId: "1:865738659083:web:60d90ffd1add62930a3e0e",
+          measurementId: "G-8ETGGW6B5L"
+        };
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
+
+     <script>
+        function accessDenied() {
+            location.href = "access-denied.html";
+        }
+    </script>
+
+     <script>
+     $( document ).ready(function() {
+         firebase.auth().onAuthStateChanged((user) => {
+              if (user) {
+                // User is signed in, see docs for a list of available properties
+                // https://firebase.google.com/docs/reference/js/firebase.User
+                var uid = user.uid;
+                var user = user;
+           
+                $('#display-name').html(user.displayName);
+                  
+                 } else {
+                    //accessDenied();
+                 }
+               });
+             });
+     </script>
+     
+    <script>
+        function signOut() {
+          //var user = firebase.auth().currentUser;
+          firebase.auth().signOut().then(function() {
+            console.log('Signed Out');
+            location.href = "../../login.html";
+          }, function(error) {
+            console.error('Sign Out Error', error);
+          });
+        }
+    </script>
+</body>
+
+</html>

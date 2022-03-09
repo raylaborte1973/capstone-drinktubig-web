@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>DrinkTubig: Mobile Based Water Refilling Stations Ordering and Delivery System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="assets/images/icon/favicon/favicon.ico">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/metisMenu.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/slicknav.min.css">
+ 
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/default-css.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- modernizr css -->
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<style>
+  
+  /*  */
+@media screen and (min-width: 1024px) {
+  body {
+    overflow: hidden;
+  }
+}
+
+.dt-logo {
+  width:100%;
+  height:100%;
+  position: relative; 
+  margin-top:10px;
+  left: 150px; 
+  right:150px;
+  bottom:50px;
+  max-width: 150px;
+}
+
+</style>
+
+<body>
+    <!-- login area start -->
+    <div class="login-area login-bg">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-xl-4 offset-xl-8 col-lg-6 offset-lg-6">
+                    <div class="login-box-s2 ptb--100">
+                     <!--  <div class="login-box-s2 ptb--100"> -->
+                        <form id="registerForm">
+                           <img src="assets/images/logo.png" class="dt-logo">
+                            <div class="login-form-head" style="background-color:rgb(40, 146, 182)">
+                                <h4>Sign Up</h4>
+                                <p>Hello there, Please fill up your information</p>
+                            </div>
+                            <div class="login-form-body">
+                               <!--  <div class="form-gp">
+                                    <label for="exampleInputName1">Name</label>
+                                    <input type="text" id="user_name">
+                                    <i class="fa fa-user"></i>
+                                    <div></div>
+                                </div> -->
+                                 <div class="form-gp">
+                                    <label for="exampleInputFirstName">First Name</label>
+                                    <input type="text" id="user_firstname">
+                                   <i class="fa fa-user"></i>
+                                    <div></div>
+                                </div>
+                                 <div class="form-gp">
+                                    <label for="exampleInputLastName">Last Name</label>
+                                    <input type="text" id="user_lastname">
+                                   <i class="fa fa-user"></i>
+                                    <div></div>
+                                </div>
+                                <div class="form-gp">
+                                    <label for="exampleInputEmail">Email Address</label>
+                                    <input type="email" id="user_email">
+                                   <i class="fa fa-envelope-o"></i>
+                                    <div></div>
+                                </div>
+                                <div class="form-gp">
+                                    <label for="exampleInputPassword">Password</label>
+                                    <input type="password" id="user_password">
+                                    <i class="fa fa-lock" id="togglePassword"></i>
+                                    <div></div>
+                                </div>
+                                <div class="form-gp">
+                                    <label for="exampleConfirmPassword">Confirm Password</label>
+                                    <input type="password" id="confirm_password">  
+                                    <i class="fa fa-lock" id="toggleConfirmPassword"></i>
+                                    <div></div>
+                                </div>
+                                    <div class="submit-btn-area">
+                                        <button  id="submit" type="submit">Submit <i class="ti-arrow-right"></i></button>
+                                    </div>
+                                <div class="form-footer text-center mt-3">
+                                    <p class="text-muted">Already created an account? <a href="login.html">Sign In</a></p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- login area end -->
+
+    <!-- jquery latest version -->
+    <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+    <!-- bootstrap 4 js -->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/metisMenu.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.min.js"></script>
+    <script src="assets/js/jquery.slicknav.min.js"></script>
+    
+    <!-- others plugins -->
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+     <!-- firebase test -->
+
+
+   <!--  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+    -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+     <script>
+        var firebaseConfig = {
+          apiKey: "AIzaSyCoOjba1Ej7CJzg_sNXdfMUhQwqbV5Cruo",
+          authDomain: "drinktubig-bcaf5.firebaseapp.com",
+          projectId: "drinktubig-bcaf5",
+          storageBucket: "drinktubig-bcaf5.appspot.com",
+          messagingSenderId: "865738659083",
+          appId: "1:865738659083:web:60d90ffd1add62930a3e0e",
+          measurementId: "G-8ETGGW6B5L"
+        };
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
+    
+    <script>
+      const registerForm = document.querySelector('#registerForm');
+        let submitButton = document.getElementById('submit')
+        //Create Event Listener To Allow Form Submission
+        submitButton.addEventListener("click", (e) => { 
+          //Prevent Default Form Submission Behavior
+         e.preventDefault();
+
+          //Get Form Values
+          const email = registerForm['user_email'].value;
+          const password = registerForm['user_password'].value;
+          const confirm_password = registerForm['confirm_password'].value;
+          const firstname = registerForm['user_firstname'].value;
+          const lastname = registerForm['user_lastname'].value;
+
+          if(password == confirm_password) {
+
+          // to create the new account
+            firebase.auth().createUserWithEmailAndPassword(email, password)
+           .then((userCredential) => {
+
+            var user  = userCredential.user;
+            var em = email;
+            var fname = firstname;
+            var lname = lastname;
+
+            let fullname = fname + " " + lname; 
+            var set_return = 1;
+
+            // get createdAt
+            var options = { hour12: false, year: 'numeric', month: 'long', day: 'numeric', hour: "numeric", minute: "numeric", second: "numeric" };
+            var today  = new Date();
+            var displayDate = today.toLocaleDateString("en-US", options);
+
+            
+            return db.collection('Users').doc(user.uid).set({
+                fullname: fullname,
+                email: email,
+                address: '',
+                phonenumber: '',
+                profile: '',
+                usertype: 'Businessowner',
+                status: 'Active', 
+                createdAt: displayDate
+            }).then(() => {
+                alert('Successfully Added a New Acccount');
+                location.href = 'index.html'
+            });
+          })
+           .catch((error) => {
+             var errorCode = error.code;
+             var errorMessage = error.message;
+              console.log("Error Data");
+              alert(errorMessage);
+           }); 
+
+            } else {
+                alert("Password is not the same");
+            }
+        })
+        </script>
+
+     <script>
+        // password
+        const togglePassword = document.querySelector("#togglePassword");
+        const password = document.querySelector("#user_password");
+
+        togglePassword.addEventListener("click", function () {
+            // toggle the type attribute
+            const type = password.getAttribute("type") === "password" ? "text" : "password";
+            password.setAttribute("type", type);
+            
+            // toggle the icon
+            this.classList.toggle("fa-unlock-alt");
+        });
+
+        //confirm_password
+        const toggleConfirmPassword = document.querySelector("#toggleConfirmPassword");
+        const confirm_password = document.querySelector("#confirm_password");
+
+        toggleConfirmPassword.addEventListener("click", function () {
+            // toggle the type attribute
+            const type = confirm_password.getAttribute("type") === "password" ? "text" : "password";
+            confirm_password.setAttribute("type", type);
+            
+            // toggle the icon
+            this.classList.toggle("fa-unlock-alt");
+        });
+    </script>
+
+
+
+    </body>
+</html>
